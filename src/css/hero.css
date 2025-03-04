@@ -1,0 +1,61 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 1440px;
+  gap: 35px;
+}
+
+.wrapper {
+  width: 465px;
+  margin-bottom: 45px;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
+
+button {
+  vertical-align: middle;
+}
+
+[type="submit"] {
+  width: 178px;
+  height: 53px;
+  color: var(--main);
+  border-color: transparent;
+  border-radius: 4px;
+  background-color: var(--extra);
+}
+
+[type="button"] {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  gap: 8px;
+}
+
+.icon {
+  fill: var(--extra);
+}
+
+span {
+  text-decoration: underline;
+  color: var(--extra);
+  text-decoration-color: var(--extra);
+}
