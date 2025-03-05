@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 84px
+  gap: 84px;
 }
 
 .list-item:nth-child(2) {
@@ -30,16 +30,17 @@
 }
 
 .overtitle {
+  display: inline-block;
   margin-bottom: 8px;
 }
 
 .title {
-  font-size: 32px;
   margin-bottom: 25px;
+  font-size: 32px;
 }
 
 .text {
-line-height: 1.6;
+  line-height: 1.6;
 }
 
 .subtitle {
@@ -48,7 +49,6 @@ line-height: 1.6;
 
 .sublist {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 25px;
 }
@@ -57,7 +57,4 @@ line-height: 1.6;
   display: flex;
   align-items: center;
   gap: 30px;
-}
-
-.icon {
 }
