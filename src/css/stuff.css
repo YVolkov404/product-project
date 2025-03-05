@@ -1,0 +1,63 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 84px
+}
+
+.list-item:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.wrap:first-child {
+  margin-bottom: 30px;
+}
+
+.wrapper:first-child {  
+  display: block;
+}
+
+.overtitle {
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.text {
+line-height: 1.6;
+}
+
+.subtitle {
+ margin-bottom: 12px;
+}
+
+.sublist {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sublist-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon {
+}
