@@ -4,6 +4,10 @@
     flex-direction: column;
     padding-top: 50px;
     gap: 50px;
+    background-image: url(../img/feedback/bg-gradient.svg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: contain;
 }
 
 .wrap {
