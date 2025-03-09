@@ -11,6 +11,9 @@ body {
   color: var(--font);
   background-color: var(--main);
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
 }
 
 /* Poppins Font */
@@ -20,7 +23,6 @@ body {
 .poppins-semibold,
 .poppins-bold {
   font-family: "Poppins", serif;
-  font-style: normal;
 }
 
 /* Montserrat Font */
@@ -30,16 +32,11 @@ body {
 .montserrat-semibold,
 .montserrat-bold {
   font-family: "Montserrat", serif;
-  font-style: normal;
   font-optical-sizing: auto;
 }
 
 /* Common font styles */
 
-.poppins-regular,
-.montserrat-regular {
-  font-weight: 400;
-}
 .poppins-medium,
 .montserrat-medium {
   font-weight: 500;
