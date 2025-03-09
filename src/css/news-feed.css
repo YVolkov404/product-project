@@ -1,0 +1,64 @@
+.title {
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+.text {
+    width: 405px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+.list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+.list-item {
+    overflow: hidden;
+    width: 350px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+}
+.wrapper {
+    padding: 24px 27px 40px;
+}
+.author {
+    line-height: 1.7;
+}
+.subtitle {
+    margin-top: 12px;
+    font-size: 24px;
+    line-height: 1.7;
+}
+.pagination {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 45px;
+    border-radius: 50%;
+    background-color: #efefef;
+}
+.pagination::after {
+    position: absolute;
+    left: 25px;
+    width: 16px;
+    height: 16px;
+    content: "";
+    border-radius: 50%;
+    background-color: #efefef;
+}
+.pagination::before {
+    position: absolute;
+    right: 25px;
+    width: 16px;
+    height: 16px;
+    content: "";
+    border-radius: 50%;
+    background-color: #efefef;
+}
+.list-item:hover .subtitle {
+    color: var(--extra);
+}
+.list:hover + .pagination {
+    background-color: var(--extra);
+}
