@@ -1,0 +1,60 @@
+.title {
+    font-size: 32px;
+    line-height: 1.9;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+.text {
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    margin: 10px 0 40px;
+    text-align: center;
+}
+.rate {
+    fill: #f3cd03;
+    display: flex;
+    gap: 10px;
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 64px;
+}
+.wrapper {
+    min-width: 327px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    padding: 29px 26px;
+}
+.descr {
+    color: #737373;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+}
+.author {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 14px;
+}
+.author-char {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.author-name {
+    color: var(--extra);
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+.author-spec {
+    color: #252b42;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
