@@ -1,0 +1,32 @@
+.wrap {
+    width: 968px;
+    padding: 0 46px 0 51px;
+    border-radius: 32px;
+    background-color: var(--extra);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.wrapper {
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 49px 0 56px 0;
+}
+.title {
+    font-size: 32px;
+    line-height: 1.5;
+    color: var(--main);
+}
+[type="button"] {
+    width: 150px;
+    height: 50px;
+    color: var(--extra);
+    border-radius: 8px;
+    background-color: var(--main);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
