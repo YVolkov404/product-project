@@ -1,0 +1,95 @@
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 22px;
+    gap: 16px;
+}
+.logo-text {
+    color: #173A56;
+    font-size: 30px;
+    line-height: 0.9;
+}
+.list {
+    line-height: 2.2;
+}
+.soc-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #edfffc;
+}
+.soc-icon {
+    fill: var(--extra);
+}
+.text {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.text:last-of-type {
+    margin-bottom: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+label {
+    position: relative;
+}
+label::after {
+    position: absolute;
+    left: 0;
+    content: url("../img/icons/icon-mobile.svg");
+    transform: translate(15px, 10px);
+}
+[type="tel"] {
+    position: relative;
+    width: 325px;
+    height: 48px;
+    padding: 10px 42px;
+    color: var(--extra);
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+}
+[type="tel"]::placeholder {
+    color: var(--extra);
+    line-height: 1.8;
+}
+[type="submit"] {
+    width: 131px;
+    height: 39px;
+    text-transform: capitalize;
+    color: var(--main);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--extra);
+}
+.copyright {
+    text-align: center;
+    color: var(--extra);
+    font-size: 14px;
+    line-height: 1.9;
+}
