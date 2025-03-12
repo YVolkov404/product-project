@@ -2,9 +2,11 @@
   --main: #fff;
   --extra: #02897A;
   --font: #22343D;
-  --icon-01: #4D8DFF;
-  --icon-02: #740A76;
-  --icon-03: #F03E3D;
+  --logo: #173A56;
+  --icon-01: #FFEFEF;
+  --icon-02: #F2F6FF;
+  --icon-03: #EDFFFC;
+  --border: #BCD0E5
 }
 
 body {
