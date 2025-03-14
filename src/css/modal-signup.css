@@ -10,11 +10,11 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(46, 47, 66, 0.4);
 }
-/* .is-hidden {
+.is-hidden {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-} */
+}
 .modal-box {
   position: absolute;
   top: 50%;
@@ -30,9 +30,9 @@
   filter:
     drop-shadow(2px 2px 10px rgba(23, 58, 86, 0.15));
 }
-/* .backdrop.is-hidden .modal-box {
+.backdrop.is-hidden .modal-box {
   transform: translate(-50%, -50%) scaleY(0);
-} */
+}
 .modal-close-btn {
     display: flex;
     align-items: center;
