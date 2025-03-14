@@ -1,0 +1,123 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100vW;
+  height: 100vH;
+  cursor: not-allowed;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+} */
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  min-height: 580px;
+  padding: 25px;
+  cursor: pointer;
+  background-color: var(--main);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scaleY(1);
+  filter:
+    drop-shadow(2px 2px 10px rgba(23, 58, 86, 0.15));
+  transition: transform 250ms var(--t-cubic-bezier);
+}
+
+/* .backdrop.is-hidden .modal-box {
+  transform: translate(-50%, -50%) scaleY(0);
+} */
+
+.modal-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    fill: var(--logo);
+}
+
+.modal-title-text {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--logo);
+    text-align: center;
+    margin: 30px 0 30px;
+}
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    max-height: 100%;
+}
+.modal-form-field {
+    width: 100%;
+}
+.modal-form-label {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.modal-form-item {
+    position: relative;
+}
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px 5px 50px;
+}
+.modal-form-icon {
+    position: absolute;
+    left: 0;
+    transform: translate(35%, 20%);
+    fill: var(--logo);
+}
+.modal-form-field:last-of-type {
+    display: flex;
+    flex-direction: row;
+}
+.visually-hidden {
+    width: 20px;
+    height: 20px;
+    color: var(--logo);
+}
+.visually-hidden + .modal-form-label {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.modal-form-checkbox {
+    position: relative;
+    fill: transparent
+}
+.icon {
+    position: absolute;
+    transform: translate(-150%, 0);
+}
+.modal-form-btn {
+    width: 175px;
+    height: 53px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--icon-01);
+    color: var(--logo);
+    cursor: pointer;
+    text-align: center;
+    margin-top: 50px;
+}
+/* .modal-form-input:checked+.modal-form-label .modal-form-icon {
+  background-color: var(--logo);
+  fill: var(--main);
+} */
