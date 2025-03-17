@@ -13,6 +13,13 @@ body {
   font-size: 16px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 25px 0 100px;
+}
+
 /* Poppins Font */
 
 .poppins-regular,
