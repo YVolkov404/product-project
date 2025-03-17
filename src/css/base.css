@@ -2,15 +2,20 @@
   --main: #fff;
   --extra: #02897A;
   --font: #22343D;
-  --icon-01: #4D8DFF;
-  --icon-02: #740A76;
-  --icon-03: #F03E3D;
+  --logo: #173A56;
+  --icon-01: #EFEFEF;
+  --icon-02: #F2F6FF;
+  --icon-03: #EDFFFC;
+  --border: #BCD0E5
 }
 
 body {
   color: var(--font);
   background-color: var(--main);
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
 }
 
 main {
@@ -27,7 +32,6 @@ main {
 .poppins-semibold,
 .poppins-bold {
   font-family: "Poppins", serif;
-  font-style: normal;
 }
 
 /* Montserrat Font */
@@ -37,16 +41,11 @@ main {
 .montserrat-semibold,
 .montserrat-bold {
   font-family: "Montserrat", serif;
-  font-style: normal;
   font-optical-sizing: auto;
 }
 
 /* Common font styles */
 
-.poppins-regular,
-.montserrat-regular {
-  font-weight: 400;
-}
 .poppins-medium,
 .montserrat-medium {
   font-weight: 500;
