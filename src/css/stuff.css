@@ -7,26 +7,11 @@
 .list-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 84px;
-}
-
-.list-item:nth-child(2) {
-  flex-direction: row-reverse;
 }
 
 .wrap {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-}
-
-.wrap:first-child {
-  margin-bottom: 30px;
-}
-
-.wrapper:first-child {  
-  display: block;
 }
 
 .overtitle {
@@ -35,7 +20,6 @@
 }
 
 .title {
-  margin-bottom: 25px;
   font-size: 32px;
 }
 
@@ -44,17 +28,64 @@
 }
 
 .subtitle {
- margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .sublist {
   display: flex;
   flex-direction: column;
-  gap: 25px;
 }
 
 .sublist-item {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+@media screen and (max-width: 411px) {
+  .list-item {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .list-item:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .wrapp {
+    gap: 24px;
+  }
+  .title,
+  .wrapper {
+    margin-bottom: 16px;
+  }
+  .sublist {
+    gap: 16px;
+  }
+  .sublist-text {
+    width: 287px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .list-item {
+    justify-content: space-between;
+    gap: 84px;
+  }
+  .list-item:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .wrapp {
+    gap: 30px;
+  }
+  .title {
+    margin-bottom: 25px;
+  }
+  .wrapper {
+    margin-bottom: 30px;
+  }
+  .sublist {
+    gap: 25px;
+  }
+  .sublist-text {
+    width: 459px;
+  }
 }
