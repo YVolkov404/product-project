@@ -1,105 +1,106 @@
 .container {
   display: flex;
   align-items: center;
-  flex-direction: column-reverse;
+  justify-content: space-between;
 }
-
 .wrap {
   display: flex;
   flex-direction: column;
 }
-
 .title {
   line-height: 1.5;
 }
-
 .text {
   font-size: 18px;
   line-height: 1.5;
 }
-
 .btn-wrapper {
   display: flex;
+  gap: 30px;
 }
-
 .btn {
-  vertical-align: middle;
-}
-
-.btn[type="submit"] {
-  color: var(--main);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
+}
+.btn[type="submit"] {
+  text-transform: capitalize;
+  color: var(--main);
   border-radius: 4px;
   background-color: var(--extra);
 }
-
+.btn[type="submit"]:hover,
+.btn[type="submit"]:focus {
+  background-color: var(--logo);
+}
 .btn[type="button"] {
-  display: inline-flex;
+  width: 165px;
+  height: 53px;
+  display: flex;
   align-items: center;
-  border: none;
   background-color: transparent;
   gap: 9px;
 }
-
 .icon {
   fill: var(--extra);
 }
-
-span {
+.btn-text {
   text-decoration: underline;
   color: var(--extra);
   text-decoration-color: var(--extra);
 }
+.btn[type="button"]:hover .icon,
+.btn[type="button"]:hover .btn-text,
+.btn[type="button"]:focus .icon,
+.btn[type="button"]:focus .btn-text {
+  color: var(--logo);
+  outline-color: transparent;
+  fill: var(--logo);
+  text-decoration-color: var(--logo);
+}
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1439px) {
   .container {
     flex-direction: column-reverse;
     gap: 10px;
   }
-
+  .wrap {
+    gap: 16px;
+  }
   .title {
     margin-bottom: 16px;
     text-align: center;
     font-size: 36px;
   }
-
-  .text:last-child {
+  .text {
     margin-bottom: 16px;
     text-align: center;
   }
-
   .btn-wrapper {
     justify-content: center;
-    gap: 29px;
   }
-
   .btn[type="submit"] {
     width: 142px;
     height: 53px;
   }
 }
 
-
 @media screen and (min-width: 1440px) {
-  .container {
-    flex-direction: row;
-    gap: 35px;
+  .wrap {
+    width: 465px;
+    gap: 45px;
   }
-
-  .wrapper {
-    margin-bottom: 45px;
-  }
-
   .title {
     margin-bottom: 18px;
     font-size: 40px;
   }
-
   .btn-wrapper {
-    justify-content: start;
+    align-items: center;
     gap: 30px;
   }
-
   .btn[type="submit"] {
     width: 178px;
     height: 53px;
