@@ -3,46 +3,38 @@
   flex-direction: column;
   gap: 100px;
 }
-
 .list-item {
   display: flex;
   align-items: center;
 }
-
 .wrap {
   display: flex;
   flex-direction: column;
 }
-
 .overtitle {
   display: inline-block;
   margin-bottom: 8px;
 }
-
 .title {
   font-size: 32px;
 }
-
 .text {
   line-height: 1.6;
 }
-
 .subtitle {
   margin-bottom: 12px;
 }
-
 .sublist {
   display: flex;
   flex-direction: column;
 }
-
 .sublist-item {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 1439px) {
   .list-item {
     flex-direction: column-reverse;
     gap: 50px;
@@ -54,11 +46,14 @@
     gap: 24px;
   }
   .title,
-  .wrapper {
+  .wrapper.wrapper:not(:last-of-type) {
     margin-bottom: 16px;
   }
   .sublist {
     gap: 16px;
+  }
+  p.extra {
+    margin-bottom: 16px;
   }
   .sublist-text {
     width: 287px;
@@ -79,11 +74,14 @@
   .title {
     margin-bottom: 25px;
   }
-  .wrapper {
+  .wrapper:not(:last-of-type) {
     margin-bottom: 30px;
   }
   .sublist {
     gap: 25px;
+  }
+  p.extra {
+    margin-bottom: 30px;
   }
   .sublist-text {
     width: 459px;
