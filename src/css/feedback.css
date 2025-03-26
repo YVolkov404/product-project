@@ -7,22 +7,18 @@
     background-position-y: top;
     background-size: contain;
 }
-
 .wrap {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 .title {
     font-size: 32px;
 }
-
 .text {
     text-align: center;
     line-height: 1.6;
 }
-
 .list {
     display: flex;
     flex-direction: row;
@@ -30,25 +26,21 @@
     justify-content: center;
     list-style: none;
 }
-
 .list-item {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
 }
-
 .wrapper {
     position: relative;
 }
-
 .icon-text {
     position: absolute;
     top: 20%;
     left: 0;
     transform: translate(25%, 0);
 }
-
 .btn[type="button"] {
     width: 216px;
     height: 53px;
@@ -59,7 +51,6 @@
     border-radius: 4px;
     background-color: var(--extra);
 }
-
 .btn[type="button"]:hover,
 .btn[type="button"]:focus {
     outline-color: var(--border);
