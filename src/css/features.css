@@ -1,80 +1,109 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 43px;
+  background-image: url(../img/features/bg-gradient.svg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: contain;
+}
 .title {
   margin-bottom: 50px;
   text-align: center;
   font-size: 32px;
 }
-
 .wrap {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 50px;
-  background-image: url(/img/bg-gradient.svg);
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-size: contain;
   gap: 50px;
 }
-
 .list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
 }
-
 .wrapper {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
-  height: 54px;
-  margin-bottom: 26px;
   border-radius: 19px;
 }
-
 .descr {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: 13px;
 }
-
 .icon {
   fill: var(--main);
 }
-
 .subtitle {
   font-size: 22px;
 }
-
 .text {
   line-height: 1.6;
 }
-
-[type="submit"] {
+.btn[type="submit"] {
   width: 175px;
   height: 53px;
   cursor: pointer;
-  text-transform:uppercase;
+  text-transform: capitalize;
   color: var(--main);
   border: none;
   border-radius: 4px;
   background-color: var(--extra);
 }
-
 .first {
 background-color: var(--extra);
 }
-
 .second {
-background-color: var(--icon-01);
+background-color: var(--icon-04);
 }
-
 .third {
-background-color: var(--icon-02);
+background-color: var(--icon-05);
+}
+.fourth {
+background-color: var(--icon-06);
 }
 
-.fourth {
-background-color: var(--icon-03);
+@media screen and (max-width: 1439px) {
+  .title {
+    width: auto;
+  }
+  .wrapper {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 24px;
+  }
+  .list {
+    flex-direction: column;
+    gap: 37px;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .descr {
+    align-items: center;
+    width: 240px;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    width: 529px;
+  }
+  .wrapper {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 26px;
+  }
+  .list {
+    justify-content: center;
+    gap: 30px;
+  }
+  .descr {
+    gap: 13px;
+  }
 }
