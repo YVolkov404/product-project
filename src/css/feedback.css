@@ -52,11 +52,19 @@
 .btn[type="button"] {
     width: 216px;
     height: 53px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: capitalize;
     color: var(--main);
     border: none;
     border-radius: 4px;
     background-color: var(--extra);
 }
+
+.btn[type="button"]:hover,
+.btn[type="button"]:focus {
+    outline-color: var(--border);
+    background-color: var(--logo);
+}   
 
 @media screen and (max-width: 1439px) {
     .container {
@@ -86,6 +94,18 @@
     }
     .icon {
         filter: drop-shadow(2px 2px 5px rgba(23, 58, 86, 0.15));
+    }
+    .first {
+        order: 0;
+    }
+    .second {
+        order: 4;
+    }
+    .third {
+        order: 2;
+    }
+    .fourth {
+        order: 3;
     }
 }
 
