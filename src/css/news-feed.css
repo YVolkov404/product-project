@@ -1,64 +1,104 @@
 .title {
-    margin-bottom: 10px;
     font-size: 34px;
 }
 .text {
-    width: 405px;
     margin-bottom: 40px;
     line-height: 1.6;
 }
 .list {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 30px;
 }
 .list-item {
     overflow: hidden;
-    width: 350px;
-    border: 1px solid #dedede;
+    border: 1px solid var(--border);
     border-radius: 8px;
-}
-.wrapper {
-    padding: 24px 27px 40px;
 }
 .author {
     line-height: 1.7;
 }
 .subtitle {
-    margin-top: 12px;
     font-size: 24px;
-    line-height: 1.7;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pagination {
-    position: relative;
-    width: 16px;
-    height: 16px;
-    margin: 0 auto;
-    margin-top: 45px;
-    border-radius: 50%;
-    background-color: #efefef;
-}
-.pagination::after {
-    position: absolute;
-    left: 25px;
-    width: 16px;
-    height: 16px;
-    content: "";
-    border-radius: 50%;
-    background-color: #efefef;
-}
-.pagination::before {
-    position: absolute;
-    right: 25px;
-    width: 16px;
-    height: 16px;
-    content: "";
-    border-radius: 50%;
-    background-color: #efefef;
+.list:hover + .pagination {
+    background-color: var(--extra);                         
 }
 .list-item:hover .subtitle {
     color: var(--extra);
 }
-.list:hover + .pagination {
-    background-color: var(--extra);
+
+@media screen and (max-width: 1439px) {
+    .title {
+        margin-bottom: 8px;
+    }
+    .text {
+        width: 349px;
+    }
+    .list {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .list-item {
+        width: 348px;
+    }
+    .wrapper {
+        padding: 20px;
+    }
+    .subtitle {
+        margin-top: 8px;
+        line-height: 1.6;
+    }
+    .pagination {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .title {
+        margin-bottom: 10px;
+    }
+    .text {
+        width: 465px;
+    }
+    .list {
+        gap: 30px;
+    }
+    .list-item {
+        width: 350px;
+    }
+    .wrapper {
+        padding: 24px 27px 40px;
+    }
+    .subtitle {
+        margin-top: 12px;
+        line-height: 1.7;
+    }
+    .pagination {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        margin: 0 auto;
+        margin-top: 45px;
+        border-radius: 50%;
+        background-color: var(--icon-01);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .pagination::after {
+        position: absolute;
+        left: 25px;
+        width: 16px;
+        height: 16px;
+        content: "";
+        border-radius: 50%;
+        background-color: var(--icon-01);
+    }
+    .pagination::before {
+        position: absolute;
+        right: 25px;
+        width: 16px;
+        height: 16px;
+        content: "";
+        border-radius: 50%;
+        background-color: var(--icon-01);
+    }
 }
