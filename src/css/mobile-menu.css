@@ -12,14 +12,14 @@
     background-color: var(--extra);
     box-shadow: none;
 }
-.wrapper {
+.menu-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: auto;
 }
-.wrap {
+.menu-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -33,7 +33,7 @@
     background-color: transparent;
     fill: var(--main);
   }
-.list {
+.menu-list {
     display: flex;
     align-items: center;
     flex-direction: column;
