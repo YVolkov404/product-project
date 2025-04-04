@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container">
     <div class="wrap">
-      <div>
+      <div class="logo-wrapper">
         <a href="./index.html" class="logo" title="Product">
           <svg width="40" height="36" aria-label="Product">
             <use href="../img/icons/icons.svg#icon-logo"></use>
@@ -34,27 +34,34 @@
       <div>
         <p class="text poppins-medium">Resourses</p>
         <ul class="list">
-          <li class="list-item"><a href="/">About Us</a></li>
-          <li class="list-item"><a href="/">Blog</a></li>
-          <li class="list-item"><a href="/">Contact</a></li>
-          <li class="list-item"><a href="/">FAQ</a></li>
+          <li class="list-item"><a class="item-link" href="/">About Us</a></li>
+          <li class="list-item"><a class="item-link" href="/">Blog</a></li>
+          <li class="list-item"><a class="item-link" href="/">Contact</a></li>
+          <li class="list-item"><a class="item-link" href="/">FAQ</a></li>
         </ul>
       </div>
       <div>
         <p class="text poppins-medium">Legal Stuff</p>
         <ul class="list">
-          <li class="list-item"><a href="/">Disclaimer</a></li>
-          <li class="list-item"><a href="/">Financing</a></li>
-          <li class="list-item"><a href="/">Privacy Policy</a></li>
-          <li class="list-item"><a href="/">Terms of Service</a></li>
+          <li class="list-item"><a class="item-link" href="/">Disclaimer</a></li>
+          <li class="list-item"><a class="item-link" href="/">Financing</a></li>
+          <li class="list-item"><a class="item-link" href="/">Privacy Policy</a></li>
+          <li class="list-item"><a class="item-link" href="/">Terms of Service</a></li>
         </ul>
       </div>
       <div class="wrapper">
         <p class="text montserrat-semibold">Knowing you're always on <br /> the best energy deal</p>
-        <label><input type="tel" name="phone" placeholder="Enter your phone number"/></label>
-        <button type="submit" class="poppins-bold">Sign up now</button>
+        <label class="label">
+          <input type="tel" dirname="tel" name="phone" value="+38"
+            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="13" maxlength="13" inputmode="tel"
+            placeholder="Enter your phone number" required />
+          <svg class="icon" width="28" height="28">
+            <use href="../img/icons/icons.svg#icon-mobile"></use>
+          </svg>
+        </label>
+        <button type="submit" class="btn poppins-bold">Sign up now</button>
       </div>
     </div>
-    <p class="copyright montserrat-medium">Yuriy Volkov &#169; All Right Reserved</p>
+    <p class="copyright montserrat-medium">Yuriy Volkov &#169; All right reserved</p>
   </div>
 </footer>
