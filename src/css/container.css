@@ -1,7 +1,6 @@
 /* Styles for Mobile devices */
 .container {
-  margin: 0 auto;
-  min-width: 320px;
+  /* min-width: 320px; */
   max-width: 411px;
 }
 /* Styles for Desktop devices */
