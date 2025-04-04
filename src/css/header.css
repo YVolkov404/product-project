@@ -24,6 +24,9 @@
   outline-style: dotted;
   outline-color: var(--border);
  }
+ .btn[type=submit] {
+  text-transform: capitalize;
+ }
  .btn.first,
  .btn.third {
   outline-color: var(--extra);
