@@ -58,6 +58,7 @@
 }
 .modal-form-item {
     position: relative;
+    margin-top: 10px;
 }
 .modal-form-input {
     width: 100%;
@@ -112,7 +113,7 @@
 .modal-form-btn {
     width: 175px;
     height: 53px;
-    margin-top: 50px;
+    margin-top: 25px;
     cursor: pointer;
     text-align: center;
     text-transform: uppercase;
