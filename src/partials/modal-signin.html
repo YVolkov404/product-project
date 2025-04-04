@@ -5,30 +5,33 @@
                 <use href="../img/icons/icons.svg#icon-cross"></use>
             </svg>
         </button>
-
         <p class="modal-title-text montserrat-bold">
-            Sign In
+            Sign in
         </p>
-        <form class="modal-form" action="#" method="post">
+        <form class="modal-form" action="#" method="get">
             <div class="modal-form-field">
-                <label class="modal-form-label montserrat-medium" for="mail">Email</label>
+                <label class="modal-form-label montserrat-medium" for="tel">Phone</label>
                 <div class="modal-form-item">
-                    <input class="modal-form-input" type="email" name="user-email" id="mail" required />
+                    <input class="modal-form-input montserrat-regular" type="tel" name="user-phone" id="tel" value="+38"
+                    pattern="/(?=.*\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$)/gm" minlength="16" maxlength="16"
+                    placeholder="Enter your phone number" required />
                     <svg class="modal-form-icon" width="28" height="28">
-                        <use href="../img/icons/icons.svg#icon-email"></use>
+                        <use href="../img/icons/icons.svg#icon-mobile"></use>
                     </svg>
                 </div>
             </div>
             <div class="modal-form-field">
                 <label class="modal-form-label montserrat-medium" for="password">Password</label>
                 <div class="modal-form-item">
-                    <input class="modal-form-input" type="password" name="user-password" id="password" required />
+                    <input class="modal-form-input montserrat-regular" type="password" name="user-password"
+                        id="password" pattern="/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$/gm"
+                        minlength="8" maxlength="18" placeholder="Enter your password" required />
                     <svg class="modal-form-icon" width="28" height="28">
                         <use href="../img/icons/icons.svg#icon-key"></use>
                     </svg>
                 </div>
             </div>
-            <button class="modal-form-btn montserrat-bold" type="submit">Sign In</button>
+            <button class="modal-form-btn montserrat-bold" type="submit">Sign in</button>
         </form>
     </div>
 </div>
