@@ -1,47 +1,47 @@
-.container {
+.features-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-bottom: 43px;
-  background-image: url(../img/features/bg-gradient.svg);
+  background-image: url(.features-.features-/img/features/bg-gradient.features-svg);
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-size: contain;
 }
-.title {
+.features-title {
   margin-bottom: 50px;
   text-align: center;
   font-size: 32px;
 }
-.wrap {
+.features-wrap {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 50px;
 }
-.list {
+.features-list {
   display: flex;
 }
-.wrapper {
+.features-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 19px;
 }
-.descr {
+.features-descr {
   display: flex;
   flex-direction: column;
 }
-.icon {
+.features-icon {
   fill: var(--main);
 }
-.subtitle {
+.features-subtitle {
   font-size: 22px;
 }
-.text {
+.features-text {
   line-height: 1.6;
 }
-.btn[type="submit"] {
+.features-btn[type="submit"] {
   width: 175px;
   height: 53px;
   cursor: pointer;
@@ -52,43 +52,43 @@
   background-color: var(--extra);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn[type="submit"]:hover,
-.btn[type="submit"]:focus {
+.features-btn[type="submit"]:hover,
+.features-btn[type="submit"]:focus {
   background-color: var(--logo);
   outline-color: var(--border);
 }
-.first {
-background-color: var(--extra);
+.features-first {
+  background-color: var(--extra);
 }
-.second {
-background-color: var(--icon-04);
+.features-second {
+  background-color: var(--icon-04);
 }
-.third {
-background-color: var(--icon-05);
+.features-third {
+  background-color: var(--icon-05);
 }
-.fourth {
-background-color: var(--icon-06);
+.features-fourth {
+  background-color: var(--icon-06);
 }
 
 @media screen and (max-width: 1439px) {
-  .title {
+  .features-title {
     width: auto;
   }
-  .wrapper {
+  .features-wrapper {
     width: 50px;
     height: 50px;
     margin-bottom: 24px;
   }
-  .list {
+  .features-list {
     flex-direction: column;
     gap: 37px;
   }
-  .list-item {
+  .features-list-item {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .descr {
+  .features-descr {
     align-items: center;
     width: 240px;
     text-align: center;
@@ -97,19 +97,19 @@ background-color: var(--icon-06);
 }
 
 @media screen and (min-width: 1440px) {
-  .title {
+  .features-title {
     width: 529px;
   }
-  .wrapper {
+  .features-wrapper {
     width: 54px;
     height: 54px;
     margin-bottom: 26px;
   }
-  .list {
+  .features-list {
     justify-content: center;
     gap: 30px;
   }
-  .descr {
+  .features-descr {
     gap: 13px;
   }
 }
