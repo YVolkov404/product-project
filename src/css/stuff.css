@@ -1,89 +1,89 @@
-.list {
+.stuff-list {
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
-.list-item {
+.stuff-list-item {
   display: flex;
   align-items: center;
 }
-.wrap {
+.stuff-wrap {
   display: flex;
   flex-direction: column;
 }
-.overtitle {
+.stuff-overtitle {
   display: inline-block;
   margin-bottom: 8px;
 }
-.title {
+.stuff-title {
   font-size: 32px;
 }
-.text {
+.stuff-text {
   line-height: 1.6;
 }
-.subtitle {
+.stuff-subtitle {
   margin-bottom: 12px;
 }
-.sublist {
+.stuff-sublist {
   display: flex;
   flex-direction: column;
 }
-.sublist-item {
+.stuff-sublist-item {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
 @media screen and (max-width: 1439px) {
-  .list-item {
+  .stuff-list-item {
     flex-direction: column-reverse;
     gap: 50px;
   }
-  .list-item:nth-child(2) {
+  .stuff-list-item:nth-child(2) {
     flex-direction: column-reverse;
   }
-  .wrapp {
+  .stuff-wrapp {
     gap: 24px;
   }
-  .title,
-  .wrapper.wrapper:not(:last-of-type) {
+  .stuff-title,
+  .stuff-wrapper.stuff-wrapper:not(:last-of-type) {
     margin-bottom: 16px;
   }
-  .sublist {
+  .stuff-sublist {
     gap: 16px;
   }
-  p.extra {
+  p.stuff-extra {
     margin-bottom: 16px;
   }
-  .sublist-text {
+  .stuff-sublist-text {
     width: 287px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .list-item {
+  .stuff-list-item {
     justify-content: space-between;
     gap: 84px;
   }
-  .list-item:nth-child(2) {
+  .stuff-list-item:nth-child(2) {
     flex-direction: row-reverse;
   }
-  .wrapp {
+  .stuff-wrapp {
     gap: 30px;
   }
-  .title {
+  .stuff-title {
     margin-bottom: 25px;
   }
-  .wrapper:not(:last-of-type) {
+  .stuff-wrapper:not(:last-of-type) {
     margin-bottom: 30px;
   }
-  .sublist {
+  .stuff-sublist {
     gap: 25px;
   }
-  p.extra {
+  p.stuff-extra {
     margin-bottom: 30px;
   }
-  .sublist-text {
+  .stuff-sublist-text {
     width: 459px;
   }
 }
