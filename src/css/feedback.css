@@ -1,0 +1,133 @@
+.feedback-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/feedback/bg-gradient.svg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: contain;
+}
+.feedback-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.feedback-title {
+  font-size: 32px;
+}
+.feedback-text {
+  text-align: center;
+  line-height: 1.6;
+}
+.feedback-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+.feedback-list-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.feedback-wrapper {
+  position: relative;
+}
+.feedback-icon-text {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  transform: translate(25%, 0);
+}
+.feedback-btn[type="button"] {
+  width: 216px;
+  height: 53px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: capitalize;
+  color: var(--main);
+  border: none;
+  border-radius: 4px;
+  background-color: var(--extra);
+}
+.feedback-btn[type="button"]:hover,
+.feedback-btn[type="button"]:focus {
+  outline-color: var(--border);
+  background-color: var(--logo);
+}
+
+@media screen and (max-width: 1439px) {
+  .feedback-container {
+    padding-top: 75px;
+    gap: 40px;
+  }
+  .feedback-wrap {
+    gap: 8px;
+  }
+  .feedback-text {
+    width: 338px;
+  }
+  .feedback-list {
+    column-gap: 0;
+    row-gap: 8px;
+  }
+  .feedback-list-item {
+    gap: 8px;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+  }
+  svg {
+    width: 285px;
+    height: 80px;
+  }
+  .feedback-icon {
+    filter: drop-shadow(2px 2px 5px rgba(23, 58, 86, 0.15));
+  }
+  .feedback-first {
+    order: 0;
+  }
+  .feedback-second {
+    order: 4;
+  }
+  .feedback-third {
+    order: 2;
+  }
+  .feedback-fourth {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feedback-container {
+    padding-top: 50px;
+    gap: 50px;
+  }
+  .feedback-wrap {
+    gap: 25px;
+  }
+  .feedback-text {
+    width: 524px;
+  }
+  .feedback-list {
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+  .feedback-list-item {
+    align-items: center;
+    gap: 18px;
+  }
+  img {
+    width: 98px;
+    height: 98px;
+  }
+  svg {
+    width: 300px;
+    height: 85px;
+  }
+  .feedback-icon {
+    filter: drop-shadow(2px 2px 10px rgba(23, 58, 86, 0.15));
+  }
+}
