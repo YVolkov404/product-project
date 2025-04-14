@@ -1,4 +1,4 @@
-.wrap {
+.promo-wrap {
     display: flex;
     overflow: hidden;
     justify-content: space-between;
@@ -6,17 +6,17 @@
     border-radius: 32px;
     background-color: var(--extra);
 }
-.wrapper {
+.promo-wrapper {
     display: flex;
     flex-direction: column;
     gap: 46px;
 }
-.title {
+.promo-title {
     color: var(--main);
     font-size: 32px;
-    line-height: 1.5;
+    line-height: 1.promo-5;
 }
-.btn[type="button"] {
+.promo-btn[type="button"] {
     width: 150px;
     height: 50px;
     cursor: pointer;
@@ -28,36 +28,36 @@
     font-size: 20px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn[type="button"]:hover,
-.btn[type="button"]:focus {
+.promo-btn[type="button"]:hover,
+.promo-btn[type="button"]:focus {
     color: var(--logo);
     outline-color: var(--border);
 }
 
 @media screen and (max-width: 1439px) {
-    .wrap {
+    .promo-wrap {
         align-items: center;
         flex-direction: column;
         width: 371px;
         height: 668px;
         padding-top: 17px;
     }
-    .wrapper {
+    .promo-wrapper {
         align-items: center;
         width: 328px;
     }
-    .title {
+    .promo-title {
         text-align: center;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .wrap {
+    .promo-wrap {
         justify-content: center;
         width: 968px;
         height: 345px;
     }
-    .wrapper {
+    .promo-wrapper {
         justify-content: center;
         width: 510px;
     }
