@@ -9,6 +9,7 @@
   --icon-04: #4D8DFF;
   --icon-05: #740A76;
   --icon-06: #F03E3D;
+  --icon-07: #F3CD03;
   --border: #BCD0E5
 }
 
@@ -19,6 +20,13 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: normal;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 25px 0 100px;
 }
 
 /* Poppins Font */
