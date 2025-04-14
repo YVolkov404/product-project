@@ -1,23 +1,23 @@
-.title {
+.clients-title {
     text-align: center;
     letter-spacing: 0.2px;
     font-size: 32px;
     line-height: 1.9;
 }
-.text {
+.clients-text {
     text-align: center;
     letter-spacing: 0.2px;
     line-height: 1.8;
 }
-.rate {
+.clients-rate {
     display: flex;
     fill: var(--icon-07);
     gap: 10px;
 }
-.list {
+.clients-list {
     display: flex;
 }
-.list-item {
+.clients-list-item {
     display: flex;
     flex-direction: column;
     min-width: 327px;
@@ -26,40 +26,40 @@
     border-radius: 5px;
     gap: 16px;
 }
-.descr {
+.clients-descr {
     letter-spacing: 0.2px;
     color: var(--logo);
     line-height: 1.8;
 }
-.author {
+.clients-author {
     display: flex;
     gap: 14px;
 }
-.author-char {
+.clients-author-char {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.author-name {
+.clients-author-name {
     letter-spacing: 0.2px;
     color: var(--extra);
     line-height: 1.5;
 }
-.author-spec {
+.clients-author-spec {
     letter-spacing: 0.2px;
     color: var(--logo);
     font-size: 14px;
     line-height: 1.7;
 }
 
-@media screen and (max-width: 1439px)  {
-    .title {
+@media screen and (max-width: 1439px) {
+    .clients-title {
         margin-bottom: 8px;
     }
-    .text {
+    .clients-text {
         margin-bottom: 32px;
     }
-    .list {
+    .clients-list {
         flex-direction: column;
         gap: 32px;
     }
@@ -68,14 +68,14 @@
     }
 }
 
-@media screen and (min-width: 1440px)  {
-    .title {
+@media screen and (min-width: 1440px) {
+    .clients-title {
         margin-bottom: 10px;
     }
-    .text {
+    .clients-text {
         margin-bottom: 40px;
     }
-    .list {
+    .clients-list {
         flex-direction: row;
         gap: 64px;
     }
