@@ -12,7 +12,6 @@
 
 /* Sections style */
 @import url('./header.css');
-<<<<<<< HEAD
 @import url('./hero.css');
 @import url('./benefits.css');
 @import url('./clients.css');
@@ -30,9 +29,3 @@
 @import url('./modal-signin.css');
 @import url('./modal-signup.css');
 @import url('./mobile-menu.css');
-=======
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
->>>>>>> 566bd35 (Initial commit)
