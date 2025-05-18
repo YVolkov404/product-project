@@ -63,7 +63,7 @@
         flex-direction: column;
         gap: 32px;
     }
-    span {
+    .clients-text-decor {
         display: inline;
     }
 }
@@ -79,7 +79,7 @@
         flex-direction: row;
         gap: 64px;
     }
-    span {
+    .clients-text-decor {
         display: block;
     }
 }

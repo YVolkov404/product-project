@@ -1,0 +1,111 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.hero-title {
+  line-height: 1.5;
+}
+.hero-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.hero-btn-wrapper {
+  display: flex;
+  gap: 30px;
+}
+.hero-btn {
+  cursor: pointer;
+  border: none;
+}
+.hero-btn[type="submit"] {
+  text-transform: capitalize;
+  color: var(--main);
+  border-radius: 4px;
+  background-color: var(--extra);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.hero-btn[type="submit"]:hover,
+.hero-btn[type="submit"]:focus {
+  background-color: var(--logo);
+}
+.hero-btn[type="button"] {
+  width: 165px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  gap: 9px;
+  padding: 0;
+
+}
+.hero-icon {
+  fill: var(--extra);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn-text {
+  text-decoration: underline;
+  color: var(--extra);
+  text-decoration-color: var(--extra);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn[type="button"]:hover .hero-icon,
+.hero-btn[type="button"]:hover .hero-btn-text,
+.hero-btn[type="button"]:focus .hero-icon,
+.hero-btn[type="button"]:focus .hero-btn-text {
+  color: var(--logo);
+  outline-color: transparent;
+  fill: var(--logo);
+  text-decoration-color: var(--logo);
+}
+
+@media screen and (max-width: 1439px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .hero-wrap {
+    gap: 16px;
+  }
+  .hero-title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 36px;
+  }
+  .hero-text {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .hero-btn-wrapper {
+    justify-content: center;
+  }
+  .hero-btn[type="submit"] {
+    width: 142px;
+    height: 53px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-wrap {
+    width: 465px;
+    gap: 45px;
+  }
+  .hero-title {
+    margin-bottom: 18px;
+    font-size: 40px;
+  }
+  .hero-btn-wrapper {
+    align-items: center;
+    gap: 30px;
+  }
+  .hero-btn[type="submit"] {
+    width: 178px;
+    height: 53px;
+  }
+}
