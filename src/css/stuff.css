@@ -46,14 +46,12 @@
     gap: 24px;
   }
   .stuff-title,
-  .stuff-wrapper.stuff-wrapper:not(:last-of-type) {
+  .stuff-wrapper:not(:last-of-type),
+  .extra {
     margin-bottom: 16px;
   }
   .stuff-sublist {
     gap: 16px;
-  }
-  p.stuff-extra {
-    margin-bottom: 16px;
   }
   .stuff-sublist-text {
     width: 287px;
@@ -74,14 +72,12 @@
   .stuff-title {
     margin-bottom: 25px;
   }
-  .stuff-wrapper:not(:last-of-type) {
+  .stuff-wrapper:not(:last-of-type),
+  .extra {
     margin-bottom: 30px;
   }
   .stuff-sublist {
     gap: 25px;
-  }
-  p.stuff-extra {
-    margin-bottom: 30px;
   }
   .stuff-sublist-text {
     width: 459px;
