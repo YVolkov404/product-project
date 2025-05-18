@@ -1,8 +1,8 @@
 .features-container {
   display: flex;
   align-items: center;
+  padding-bottom: 63px;
   flex-direction: column;
-  padding-bottom: 43px;
   background-image: url(../img/features/bg-gradient.svg);
   background-repeat: no-repeat;
   background-position-y: bottom;
