@@ -64,7 +64,7 @@
   transform: translate(15px, 10px);
   fill: var(--extra);
 }
-input[type="tel"] {
+.footer-label input[type="tel"] {
   position: relative;
   width: 325px;
   height: 48px;
@@ -73,11 +73,11 @@ input[type="tel"] {
   border: 1px solid var(--border);
   border-radius: 4px;
 }
-input[type="tel"]::placeholder {
+.footer-label input[type="tel"]::placeholder {
   color: var(--border);
   line-height: 1.8;
 }
-input[type="tel"]:focus-visible {
+.footer-label input[type="tel"]:focus-visible {
   outline-color: var(--extra);
 }
 .footer-btn[type="submit"] {
