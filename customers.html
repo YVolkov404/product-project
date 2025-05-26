@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customers</title>
     <link rel="icon" type="image/svg+xml" href="/product-project/assets/favicon-R-EabsnR.svg" />
-    <script type="module" crossorigin src="/product-project/assets/main-B2Qgikhr.js"></script>
-    <link rel="stylesheet" crossorigin href="/product-project/assets/main--ZgHJlDz.css">
+    <script type="module" crossorigin src="/product-project/assets/main-BJYxjdzZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/product-project/assets/main-QyBvtyNX.css">
   </head>
   <body>
     <header class="header">
@@ -208,7 +208,7 @@
   </div>
 </footer>
 
-    <div class="mobile-menu js-menu-container">
+    <div id="mobile-menu" class="mobile-menu js-menu-container" hidden>
   <div class="menu-wrapper">
     <button type="button" class="btn-menu">
       <svg width="32" height="32">
@@ -237,14 +237,14 @@
       </li>
     </ul>
     <div class="btn-wrapper">
-      <button type="submit" class="btn-mobile poppins-bold" data-modal-signin data-modal-open-1>Sign in</button>
-      <button type="submit" class="btn-mobile poppins-bold" data-modal-signup data-modal-open-2>Sign up</button>
+      <button type="submit" class="btn-mobile poppins-bold" data-modal-toggle="signin">Sign in</button>
+      <button type="submit" class="btn-mobile poppins-bold" data-modal-toggle="signup">Sign up</button>
     </div>
   </div>
 </div>
-    <div class="backdrop container is-hidden-1" data-modal-1>
+    <div class="backdrop container modal is-hidden" data-modal="signin">
   <div class="modal-box">
-    <button type="button" class="modal-close-btn" data-modal-close-1>
+    <button type="button" class="modal-close-btn" data-modal-toggle="signin">
       <svg class="close-btn-icon" width="28" height="28">
         <use href="../img/icons/icons.svg#icon-cross"></use>
       </svg>
@@ -256,7 +256,7 @@
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="email">Email</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="email" name="email" id="email"
+          <input class="modal-form-input montserrat-regular" type="email" name="email" id="email" autocomplete="false"
             placeholder="Enter your email" required />
           <svg class="modal-form-icon" width="28" height="28">
             <use href="../img/icons/icons.svg#icon-email"></use>
@@ -266,7 +266,7 @@
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="password">Password</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="password" name="password" id="password"
+          <input class="modal-form-input montserrat-regular" type="password" name="password" autocomplete="false"
             placeholder="Enter your password" required />
           <svg class="modal-form-icon" width="28" height="28">
             <use href="../img/icons/icons.svg#icon-key"></use>
@@ -278,9 +278,9 @@
   </div>
 </div>
 
-    <div class="backdrop container is-hidden-2" data-modal-2>
+    <div class="backdrop container modal is-hidden" data-modal="signup">
   <div class="modal-box">
-    <button type="button" class="modal-close-btn" data-modal-close-2>
+    <button type="button" class="modal-close-btn" data-modal-toggle="signup">
       <svg class="close-btn-icon" width="28" height="28">
         <use href="../img/icons/icons.svg#icon-cross"></use>
       </svg>
@@ -289,11 +289,11 @@
     <p class="modal-title-text montserrat-bold">
       Sign Up
     </p>
-    <form class="modal-form" action="#" method="post">
+    <form class="modal-form" action="#" method="post" >
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="tel">Phone</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="tel" name="phone" id="tel" value="+380"
+          <input class="modal-form-input montserrat-regular" type="tel" name="phone" id="tel" autocomplete="false" value="+380"
             pattern="^\+380\d+(?:[ ]\d+)*$" minlength="12" maxlength="16" required />
           <svg class="modal-form-icon" width="28" height="28">
             <use href="../img/icons/icons.svg#icon-mobile"></use>
@@ -303,7 +303,7 @@
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="mail">Email</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="email" name="user-email" id="mail"
+          <input class="modal-form-input montserrat-regular" type="email" name="user-email" id="mail" autocomplete="false"
             pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" placeholder="Enter your email" required />
           <svg class="modal-form-icon" width="28" height="28">
             <use href="../img/icons/icons.svg#icon-email"></use>
@@ -313,7 +313,7 @@
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="password">Password</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="password" name="user-password" id="password"
+          <input class="modal-form-input montserrat-regular" type="password" id="password" autocomplete="false"
             pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" minlength="8" maxlength="18"
             placeholder="Enter your password" required />
           <svg class="modal-form-icon" width="28" height="28">
