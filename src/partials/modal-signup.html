@@ -1,6 +1,6 @@
-<div class="backdrop container is-hidden-2" data-modal-2>
+<div class="backdrop container modal is-hidden" data-modal="signup">
   <div class="modal-box">
-    <button type="button" class="modal-close-btn" data-modal-close-2>
+    <button type="button" class="modal-close-btn" data-modal-toggle="signup">
       <svg class="close-btn-icon" width="28" height="28">
         <use href="../img/icons/icons.svg#icon-cross"></use>
       </svg>
@@ -13,7 +13,7 @@
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="tel">Phone</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="tel" name="phone" id="tel" value="+380"
+          <input class="modal-form-input montserrat-regular" type="tel" name="phone" value="+380"
             pattern="^\+380\d+(?:[ ]\d+)*$" minlength="12" maxlength="16" required />
           <svg class="modal-form-icon" width="28" height="28">
             <use href="../img/icons/icons.svg#icon-mobile"></use>
@@ -23,7 +23,7 @@
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="mail">Email</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="email" name="user-email" id="mail"
+          <input class="modal-form-input montserrat-regular" type="email" name="user-email"
             pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" placeholder="Enter your email" required />
           <svg class="modal-form-icon" width="28" height="28">
             <use href="../img/icons/icons.svg#icon-email"></use>
@@ -33,7 +33,7 @@
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="password">Password</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="password" name="user-password" id="password"
+          <input class="modal-form-input montserrat-regular" type="password" name="password" autocomplete
             pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" minlength="8" maxlength="18"
             placeholder="Enter your password" required />
           <svg class="modal-form-icon" width="28" height="28">
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="modal-form-field">
-        <input class="modal-form-input visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
+        <input class="modal-form-input visually-hidden" type="checkbox" id="user-privacy" id="user-privacy"
           value="true" required />
         <label class="modal-form-label montserrat-medium" for="user-privacy">
           <span class="modal-form-checkbox">
