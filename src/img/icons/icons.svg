@@ -101,8 +101,6 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M16.565 21.531c0 1.791 1.433 3.244 3.2 3.244s3.2-1.452 3.2-3.244c0-1.792-1.433-3.244-3.2-3.244s-3.2 1.452-3.2 3.244z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M110.306 12.372c0-5.585-4.466-10.113-9.976-10.113h-87.341c-5.51 0-9.976 4.528-9.976 10.113s4.466 10.113 9.976 10.113h87.341c5.51 0 9.976-4.528 9.976-10.113zM10.541 28.4c0 0.949 0.759 1.717 1.694 1.717s1.694-0.769 1.694-1.717c0-0.948-0.759-1.717-1.694-1.717s-1.694 0.769-1.694 1.717z"></path>
 </symbol>
-<<<<<<< Updated upstream
-=======
 <symbol id="icon-menu" viewBox="0 0 29 32">
 <path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 16h21.677"></path>
 <path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 8h21.677"></path>
@@ -120,11 +118,5 @@
 <symbol id="icon-checkmark" viewBox="0 0 32 32">
 <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
 </symbol>
-<symbol id="icon-menu" viewBox="0 0 29 32">
-<path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 16h21.677"></path>
-<path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 8h21.677"></path>
-<path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 24h21.677"></path>
-</symbol>
->>>>>>> Stashed changes
 </defs>
 </svg>
