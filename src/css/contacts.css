@@ -1,23 +1,23 @@
-.clients-title {
+.contacts-title {
     text-align: center;
     letter-spacing: 0.2px;
     font-size: 32px;
     line-height: 1.9;
 }
-.clients-text {
+.contacts-text {
     text-align: center;
     letter-spacing: 0.2px;
     line-height: 1.8;
 }
-.clients-rate {
+.contacts-rate {
     display: flex;
     fill: var(--icon-07);
     gap: 10px;
 }
-.clients-list {
+.contacts-list {
     display: flex;
 }
-.clients-list-item {
+.contacts-list-item {
     display: flex;
     flex-direction: column;
     min-width: 327px;
@@ -26,26 +26,26 @@
     border-radius: 5px;
     gap: 16px;
 }
-.clients-descr {
+.contacts-descr {
     letter-spacing: 0.2px;
     color: var(--logo);
     line-height: 1.8;
 }
-.clients-author {
+.contacts-author {
     display: flex;
     gap: 14px;
 }
-.clients-author-char {
+.contacts-author-char {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.clients-author-name {
+.contacts-author-name {
     letter-spacing: 0.2px;
     color: var(--extra);
     line-height: 1.5;
 }
-.clients-author-spec {
+.contacts-author-spec {
     letter-spacing: 0.2px;
     color: var(--logo);
     font-size: 14px;
@@ -53,33 +53,33 @@
 }
 
 @media screen and (max-width: 1439px) {
-    .clients-title {
+    .contacts-title {
         margin-bottom: 8px;
     }
-    .clients-text {
+    .contacts-text {
         margin-bottom: 32px;
     }
-    .clients-list {
+    .contacts-list {
         flex-direction: column;
         gap: 32px;
     }
-    .clients-text-decor {
+    .contacts-text-decor {
         display: inline;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .clients-title {
+    .contacts-title {
         margin-bottom: 10px;
     }
-    .clients-text {
+    .contacts-text {
         margin-bottom: 40px;
     }
-    .clients-list {
+    .contacts-list {
         flex-direction: row;
         gap: 64px;
     }
-    .clients-text-decor {
+    .contacts-text-decor {
         display: block;
     }
 }
