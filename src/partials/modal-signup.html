@@ -9,11 +9,11 @@
     <p class="modal-title-text montserrat-bold">
       Sign Up
     </p>
-    <form class="modal-form" action="#" method="post">
+    <form class="modal-form" action="#" method="post" >
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="tel">Phone</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="tel" name="phone" id="tel" value="+380"
+          <input class="modal-form-input montserrat-regular" type="tel" name="phone" id="tel" autocomplete="false" value="+380"
             pattern="^\+380\d+(?:[ ]\d+)*$" minlength="12" maxlength="16" required />
           <svg class="modal-form-icon" width="28" height="28">
             <use href="../img/icons/icons.svg#icon-mobile"></use>
@@ -23,7 +23,7 @@
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="mail">Email</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="email" name="user-email" id="mail"
+          <input class="modal-form-input montserrat-regular" type="email" name="user-email" id="mail" autocomplete="false"
             pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" placeholder="Enter your email" required />
           <svg class="modal-form-icon" width="28" height="28">
             <use href="../img/icons/icons.svg#icon-email"></use>
@@ -33,7 +33,7 @@
       <div class="modal-form-field">
         <label class="modal-form-label montserrat-medium" for="password">Password</label>
         <div class="modal-form-item">
-          <input class="modal-form-input montserrat-regular" type="password" name="user-password" id="password"
+          <input class="modal-form-input montserrat-regular" type="password" id="password" autocomplete="false"
             pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" minlength="8" maxlength="18"
             placeholder="Enter your password" required />
           <svg class="modal-form-icon" width="28" height="28">
