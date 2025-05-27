@@ -1,41 +1,52 @@
-name: Build and deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
-    paths: [src/img/**/*, src/partials/**/*]
+    branches:
+      - main # This workflow will run on pushes to your 'main' branch.
+    # It's generally recommended to build and deploy the entire site
+    # if any source files change, as bundlers often re-process everything.
+    # Removing 'paths' ensures any change triggers a full build and deploy.
+
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Specifies the operating system for the job.
+
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+      - name: Checkout repository 🛎️
+        uses: actions/checkout@v4 # Use the latest stable version for better security and features.
+                                  # This step checks out your repository's code.
 
-      - name: Install and build 🔧
-        run: |
-          npm install
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+      - name: Setup Node.js environment 🚀
+        uses: actions/setup-node@v4 # Sets up Node.js for your build process.
         with:
-          branch: gh-pages
-          folder: dist, src/img/**/*, src/partials/**/*
+          node-version: '18' # Ensure this matches the Node.js version your project uses.
+          cache: 'npm' # Caches npm dependencies to speed up subsequent runs.
 
-      - name: Deploy images
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${ github.SERVER_HOST }
-          username: ${ YVolkov404.SERVER_USER }
-          key: ${ secrets.SERVER_SSH_KEY }
-          source: "src/img/**/*"
-          target: "https://yvolkov404.github.io/product-project"
+      - name: Install project dependencies 📦
+        run: npm install # Installs all dependencies listed in your package.json.
 
-      - name: Deploy partials
-        uses: appleboy/scp-action@v0.1.4
+      - name: Build project 🏗️
+        run: npm run build # This command executes your project's build script.
+                           # It's crucial that this script outputs all your static files
+                           # (HTML, CSS, JavaScript, and importantly, your images from
+                           # 'src/img/subfolder' and other assets) into a single,
+                           # designated output directory, typically 'dist' or 'build'.
+
+      - name: Deploy to GitHub Pages 🌐
+        # This action is specifically designed for deploying to GitHub Pages.
+        # It handles creating/updating the 'gh-pages' branch automatically.
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          host: ${ github.SERVER_HOST }
-          username: ${ YVolkov404.SERVER_USER }
-          key: ${ secrets.SERVER_SSH_KEY }
-          source: "src/partials/**/*"
-          target: "https://yvolkov404.github.io/product-project"
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub automatically provides this token for actions.
+          publish_dir: ./dist # IMPORTANT: This specifies the directory containing your built static files.
+                              # Ensure your 'npm run build' command places all deployable
+                              # content (including your images from subfolders) into this 'dist' folder.
+                              #
+                              # For example, if your build output places 'src/img/subfolder/my-image.png'
+                              # into 'dist/img/subfolder/my-image.png', then your HTML should reference it as
+                              # `<img src="img/subfolder/my-image.png">`.
+          # cname: your-custom-domain.com # Uncomment and replace if you have a custom domain.
+          # user_name: 'github-actions[bot]' # Optional: Customize the commit author name for the deployment.
+          # user_email: 'github-actions[bot]@users.noreply.github.com' # Optional: Customize the commit author email.
+
