@@ -1,9 +1,21 @@
-.pricing-title {
+.pricing-title,
+.pricing-second-title {
   text-align: center;
   font-size: 34px;
   line-height: 1.7;
 }
+.pricing-wrap-title {
+  margin-top: 50px;
+  text-align: center;
+  background-image: url('../img/pricing/bg-rectangle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .pricing-text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.pricing-second-text {
   margin-bottom: 40px;
   text-align: center;
 }
@@ -71,22 +83,25 @@
   line-height: 1.4;
   gap: 16px;
 }
-.pricing-btn[type="button"] {
+.pricing-btn[type="button"],
+.pricing-second-btn {
   width: 139px;
   height: 44px;
-  color: var(--main);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--main);
   border: none;
   border-radius: 8px;
   background-color: var(--extra);
   font-size: 18px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pricing-btn[type="button"]:hover,
-.pricing-btn[type="button"]:focus {
-  background-color: var(--logo);
+.pricing-btn[type="button"]:focus,
+.pricing-second-btn:hover,
+.pricing-second-btn:focus {
   outline-color: transparent;
+  background-color: var(--logo);
 }
 .pricing-btn-middle[type="button"] {
   color: var(--extra);
@@ -95,27 +110,36 @@
 .pricing-btn-middle[type="button"]:hover,
 .pricing-btn-middle[type="button"]:focus {
   color: var(--logo);
-  background-color: var(--main);
   outline-color: var(--border);
+  background-color: var(--main);
 }
 a:focus {
   outline: none;
 }
 
 @media screen and (max-width: 1439px) {
-  .pricing-title {
+  .pricing-title,
+  .pricing-second-title {
     margin-bottom: 8px;
   }
+  .pricing-second-title {
+    padding-top: 30px;
+    font-size: 30px;
+  }
   .pricing-wrap {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     gap: 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .pricing-title {
+  .pricing-title,
+  .pricing-second-title {
     margin-bottom: 10px;
+  }
+  .pricing-second-title {
+    padding-top: 50px;
   }
   .pricing-wrap {
     flex-direction: row;
