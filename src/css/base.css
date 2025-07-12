@@ -22,6 +22,13 @@ body {
   line-height: normal;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 100px 0;
+}
+
 /* Poppins Font */
 
 .poppins-regular,
