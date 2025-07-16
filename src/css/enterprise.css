@@ -1,10 +1,10 @@
-.pricing-title {
+.enterprise-title {
   text-align: center;
 }
-.pricing-wrapper {
+.enterprise-wrapper {
   display: flex;
 }
-.pricing-list {
+.enterprise-list {
   display: flex;
   flex-direction: column;
 }
@@ -28,16 +28,16 @@
 }
 
 @media screen and (max-width: 1439px) {
-  .pricing-title {
+  .enterprise-title {
     margin-bottom: 50px;
     font-size: 32px;
     line-height: 1.4;
   }
-  .pricing-wrapper {
+  .enterprise-wrapper {
     flex-direction: column;
     gap: 50px;
   }
-  .pricing-list {
+  .enterprise-list {
     gap: 40px;
   }
   .list-item-header {
@@ -49,19 +49,19 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .pricing-title {
+  .enterprise-title {
     margin-bottom: 56px;
     font-size: 34px;
   }
-  .pricing-wrapper {
+  .enterprise-wrapper {
     justify-content: space-between;
   }
-  .pricing-list {
+  .enterprise-list {
     justify-content: space-between;
     width: 541px;
     height: 100%;
   }
-  .pricing-list-item {
+  .enterprise-list-item {
     width: 506px;
   }
   .list-item-header {
