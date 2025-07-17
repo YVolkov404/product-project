@@ -118,10 +118,5 @@
 <symbol id="icon-checkmark" viewBox="0 0 32 32">
 <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
 </symbol>
-<symbol id="icon-menu" viewBox="0 0 29 32">
-<path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 16h21.677"></path>
-<path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 8h21.677"></path>
-<path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 24h21.677"></path>
-</symbol>
 </defs>
 </svg>
