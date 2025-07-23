@@ -1,3 +1,62 @@
+.promo-container  {
+  background-image: url(../img/promo/bg-gradient.svg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: contain;
+}
+.preview-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 95px;
+}
+.preview-image-wrapper {
+  padding: 45px;
+  border-radius: 50%;
+}
+.bg-icon-first {
+  background-color: var(--icon-08);
+}
+.bg-icon-second {
+  background-color: var(--icon-02);
+}
+.preview-list {
+  display: flex;
+  justify-content: center;
+}
+.preview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.preview-item-title {
+  font-size: 24px;
+  line-height: 1.7;
+}
+.preview-item-sublist {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.preview-sublist-link {
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.preview-sublist-link:hover,
+.preview-sublist-link:focus {
+  color: var(--border);
+  outline-color: var(--border);
+}
+.preview-item-text {
+  line-height: 1.75;
+}
+.preview-item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
 .promo-wrap {
   display: flex;
   overflow: hidden;
@@ -12,8 +71,7 @@
 }
 .promo-title {
   color: var(--main);
-  font-size: 32px;
-  line-height: 1.promo-5;
+  line-height: 1.5;
 }
 .promo-btn[type="button"] {
   width: 150px;
@@ -34,24 +92,45 @@
 }
 
 @media screen and (max-width: 1439px) {
+  .preview-wrap {
+    padding-bottom: 133px;
+  }
+  .preview-title-cut {
+    display: inline-block;
+  }
+  .preview-list {
+    flex-direction: column;
+    gap: 66px;
+  }
   .promo-wrap {
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    width: 371px;
+    gap: 100px;
+    width: 347px;
     height: 668px;
-    padding-top: 27px;
+    padding-top: 65px;
   }
   .promo-wrapper {
     align-items: center;
-    width: 328px;
+    width: 300px;
   }
   .promo-title {
     text-align: center;
+    font-size: 26px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .preview-wrap {
+    padding-bottom: 195px;
+  }
+  .preview-title-cut {
+    display: block;
+  }
+  .preview-list {
+    flex-direction: row;
+    gap: 227px;
+  }
   .promo-wrap {
     justify-content: center;
     width: 968px;
@@ -65,5 +144,7 @@
     display: flex;
     align-items: center;
   }
-
+  .promo-title {
+    font-size: 32px;
+  }
 }
