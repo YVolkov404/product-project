@@ -92,10 +92,8 @@
 }
 
 @media screen and (max-width: 1439px) {
-  .promo-container{
-    padding-top: 30px;
-  }
   .preview-wrap {
+    padding-top: 30px;
     padding-bottom: 133px;
   }
   .preview-title-cut {
@@ -124,10 +122,8 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .promo-container {
-    padding-top: 35px;
-  }
   .preview-wrap {
+    padding-top: 35px;
     padding-bottom: 195px;
   }
   .preview-title-cut {
