@@ -7,7 +7,8 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 64px;
 }
 
 @media screen and (max-width: 1439px) {
@@ -32,7 +33,7 @@
     margin-top: 100px;
     padding: 0 135px;
   }
-  .section-title {
+  .clients-section-title {
     margin-bottom: 50px;
     font-size: 40px;
   }
