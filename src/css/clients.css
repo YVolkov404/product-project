@@ -1,4 +1,4 @@
-.section-title {
+.clients-section-title {
   text-align: center;
   color: var(--font);
 }
@@ -15,7 +15,7 @@
     margin-top: 50px;
     padding: 0;
   }
-  .section-title {
+  .clients-section-title {
     margin-bottom: 38px;
     font-size: 36px;
   }
