@@ -8,10 +8,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 64px;
 }
 
 @media screen and (max-width: 1439px) {
+  .clients-list {
+    gap: 50px;
+  }
   .clients-conntainer {
     margin-top: 50px;
     padding: 0;
@@ -29,6 +31,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .clients-list {
+    gap: 64px;
+  }
   .clients-conntainer {
     margin-top: 100px;
     padding: 0 135px;
