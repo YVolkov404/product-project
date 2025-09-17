@@ -1,3 +1,9 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
@@ -5,7 +11,6 @@
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./advantages.css');
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./benefits.css');
@@ -15,7 +20,6 @@
 @import url('./faq.css');
 @import url('./features.css');
 @import url('./feedback.css');
-@import url('./product.css');
 @import url('./news-feed.css');
 @import url('./pricing.css');
 @import url('./promo.css');
