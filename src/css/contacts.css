@@ -1,0 +1,85 @@
+.contacts-title {
+    text-align: center;
+    letter-spacing: 0.2px;
+    font-size: 32px;
+    line-height: 1.9;
+}
+.contacts-text {
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 1.8;
+}
+.contacts-rate {
+    display: flex;
+    fill: var(--icon-07);
+    gap: 10px;
+}
+.contacts-list {
+    display: flex;
+}
+.contacts-list-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 327px;
+    padding: 29px 26px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    gap: 16px;
+}
+.contacts-descr {
+    letter-spacing: 0.2px;
+    color: var(--logo);
+    line-height: 1.8;
+}
+.contacts-author {
+    display: flex;
+    gap: 14px;
+}
+.contacts-author-char {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacts-author-name {
+    letter-spacing: 0.2px;
+    color: var(--extra);
+    line-height: 1.5;
+}
+.contacts-author-spec {
+    letter-spacing: 0.2px;
+    color: var(--logo);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+@media screen and (max-width: 1439px) {
+    .contacts-title {
+        margin-bottom: 8px;
+    }
+    .contacts-text {
+        margin-bottom: 32px;
+    }
+    .contacts-list {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .contacts-text-decor {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contacts-title {
+        margin-bottom: 10px;
+    }
+    .contacts-text {
+        margin-bottom: 40px;
+    }
+    .contacts-list {
+        flex-direction: row;
+        gap: 64px;
+    }
+    .contacts-text-decor {
+        display: block;
+    }
+}
