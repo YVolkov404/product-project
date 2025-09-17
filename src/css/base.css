@@ -11,7 +11,8 @@
   --icon-06: #F03E3D;
   --icon-07: #F3CD03;
   --icon-08: #FFEFEF;
-  --border: #BCD0E5
+  --border: #BCD0E5;
+  --bg-color: #F4F5F7;
 }
 
 body {
