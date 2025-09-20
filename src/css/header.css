@@ -35,6 +35,7 @@
  }
  .header-list-item a:focus
  .header-list-item a[class="active"] {
+  color: var(--extra);
   outline-style: dotted;
   outline-color: var(--border);
  }
