@@ -31,16 +31,12 @@ main {
   margin: 100px 0;
 }
 
-/* Poppins Font */
-
 .poppins-regular,
 .poppins-medium,
 .poppins-semibold,
 .poppins-bold {
   font-family: "Poppins", serif;
 }
-
-/* Montserrat Font */
 
 .montserrat-regular,
 .montserrat-medium,
