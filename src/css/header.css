@@ -30,7 +30,11 @@
  .header-list-item:focus {
   color: var(--extra);
  }
- .header-list-item a:focus {
+ a[class="active"] {
+  color: var(--extra);
+ }
+ .header-list-item a:focus
+ .header-list-item a[class="active"] {
   outline-style: dotted;
   outline-color: var(--border);
  }
