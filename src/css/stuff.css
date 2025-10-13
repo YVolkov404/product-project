@@ -1,3 +1,6 @@
+.stuff-container {
+  min-width: 411px;
+}
 .stuff-list {
   display: flex;
   flex-direction: column;
