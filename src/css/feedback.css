@@ -59,6 +59,8 @@
 
 @media screen and (max-width: 1439px) {
   .feedback-container {
+    min-width: 411px;
+    padding-top: 70px;
     gap: 40px;
   }
   .feedback-wrap {
