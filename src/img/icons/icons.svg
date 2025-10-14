@@ -81,20 +81,10 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M16.565 21.531c0 1.791 1.433 3.244 3.2 3.244s3.2-1.452 3.2-3.244c0-1.792-1.433-3.244-3.2-3.244s-3.2 1.452-3.2 3.244z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M110.306 12.372c0-5.585-4.466-10.113-9.976-10.113h-87.341c-5.51 0-9.976 4.528-9.976 10.113s4.466 10.113 9.976 10.113h87.341c5.51 0 9.976-4.528 9.976-10.113zM10.541 28.4c0 0.949 0.759 1.717 1.694 1.717s1.694-0.769 1.694-1.717c0-0.948-0.759-1.717-1.694-1.717s-1.694 0.769-1.694 1.717z"></path>
 </symbol>
-<<<<<<< HEAD
-<symbol id="icon-cross" viewBox="0 0 32 32">
-<path d="M25.333 5.333q0.573 0 0.953 0.38t0.38 0.953q0 0.563-0.385 0.948l-8.396 8.385 8.396 8.385q0.385 0.385 0.385 0.948 0 0.573-0.38 0.953t-0.953 0.38q-0.563 0-0.948-0.385l-8.385-8.396-8.385 8.396q-0.385 0.385-0.948 0.385-0.573 0-0.953-0.38t-0.38-0.953q0-0.563 0.385-0.948l8.396-8.385-8.396-8.385q-0.385-0.385-0.385-0.948 0-0.573 0.38-0.953t0.953-0.38q0.563 0 0.948 0.385l8.385 8.396 8.385-8.396q0.385-0.385 0.948-0.385z"></path>
-=======
-<symbol id="icon-menu" viewBox="0 0 29 32">
-<path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 16h21.677"></path>
-<path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 8h21.677"></path>
-<path stroke-width="3.0968" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3.613 24h21.677"></path>
-</symbol>
 <symbol id="icon-enterpreneur" viewBox="0 0 32 32">
 <path fill="#d6b1ff" style="fill: var(--color1, #d6b1ff)" d="M24 13.333h8l-4-5.333-4 5.333zM24 18.667h8l-4 5.333-4-5.333z"></path>
 <path fill="#02897a" style="fill: var(--color2, #02897a)" d="M1.333 0h8v32h-8c-0.354 0-0.693-0.141-0.943-0.391s-0.391-0.589-0.391-0.943v-29.333c0-0.354 0.14-0.693 0.391-0.943s0.589-0.391 0.943-0.391z"></path>
 <path fill="#02897a" style="fill: var(--color2, #02897a)" d="M12 0h8c0.354 0 0.693 0.14 0.943 0.391s0.391 0.589 0.391 0.943v29.333c0 0.354-0.141 0.693-0.391 0.943s-0.589 0.391-0.943 0.391h-8v-32z"></path>
->>>>>>> origin/main
 </symbol>
 <symbol id="icon-universities" viewBox="0 0 32 32">
 <path fill="#d6b1ff" style="fill: var(--color1, #d6b1ff)" d="M6.667 1.333h-4c-0.354 0-0.693 0.14-0.943 0.391s-0.391 0.589-0.391 0.943v26.667c0 0.354 0.14 0.693 0.391 0.943s0.589 0.391 0.943 0.391h4v-29.333z"></path>
