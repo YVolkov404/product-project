@@ -1,3 +1,6 @@
+.contacts-container {
+  min-width: 411px
+}
 .contacts-title {
     text-align: center;
     letter-spacing: 0.2px;
