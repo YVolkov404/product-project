@@ -1,6 +1,7 @@
 .contacts-title {
     text-align: center;
     letter-spacing: 0.2px;
+    text-transform: capitalize;
     font-size: 32px;
     line-height: 1.9;
 }
