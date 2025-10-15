@@ -1,3 +1,6 @@
+.pricing-container {
+  min-width: 411px
+}
 .pricing-title,
 .pricing-second-title {
   text-align: center;
