@@ -1,6 +1,6 @@
 /* Styles for Mobile devices */
 .container {
-  /* min-width: 320px; */
+  min-width: 411px;
   max-width: 411px;
   margin: 0 auto;
   padding: 0 24px;
